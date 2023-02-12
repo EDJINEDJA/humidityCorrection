@@ -149,7 +149,7 @@ class load_transform():
             y_train = Y[:n_train]
             X_test = X[n_train:]
             y_test = Y[n_train:]
-            return scaled_array , X_train,y_train,X_test,y_test
+            return X_train,y_train,X_test,y_test
         else:
             scaled_array =  self.std_scaling(withlogtrans) 
             X,Y =self.create_sliding_window(scaled_array )
@@ -157,5 +157,5 @@ class load_transform():
             y_train = Y[:n_train]
             X_test = X[n_train:]
             y_test = Y[n_train:]
-            return scaled_array  , X_train,y_train,X_test,y_test
+            return X_train,y_train,X_test,y_test
         

@@ -15,9 +15,9 @@ output_length = int(const_variables.get("slicing","output_length"))
 
 if __name__ == "__main__":
     parser = load_transform()
-    scaled_array , X_train,y_train,X_test,y_test = parser.fit_transform(withlogtrans=False, method_scaling="std")
+    X_train,y_train,X_test,y_test = parser.fit_transform(withlogtrans=False, method_scaling="std")
    
-    n_features = scaled_array.shape[-1]
+    n_features = X_train.shape[-1]
     
     model= Network(n_features=int(n_features),
                                 output_length=output_length,
@@ -28,4 +28,3 @@ if __name__ == "__main__":
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
    
     trainer(X_train,y_train,X_test,y_test,n_epochs,batch_size, model ,criterion, optimizer)
-   

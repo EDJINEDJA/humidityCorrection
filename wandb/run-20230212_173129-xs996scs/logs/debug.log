@@ -1,0 +1,33 @@
+2023-02-12 17:31:29,829 INFO    MainThread:346308 [wandb_setup.py:_flush():68] Configure stats pid to 346308
+2023-02-12 17:31:29,829 INFO    MainThread:346308 [wandb_setup.py:_flush():68] Loading settings from /home/lnit/.config/wandb/settings
+2023-02-12 17:31:29,829 INFO    MainThread:346308 [wandb_setup.py:_flush():68] Loading settings from /home/lnit/Bureau/humidityCorrection/wandb/settings
+2023-02-12 17:31:29,829 INFO    MainThread:346308 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-02-12 17:31:29,829 INFO    MainThread:346308 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'main_.py', 'program': '/home/lnit/Bureau/humidityCorrection/main_.py'}
+2023-02-12 17:31:29,829 INFO    MainThread:346308 [wandb_init.py:_log_setup():478] Logging user logs to /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173129-xs996scs/logs/debug.log
+2023-02-12 17:31:29,829 INFO    MainThread:346308 [wandb_init.py:_log_setup():479] Logging internal logs to /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173129-xs996scs/logs/debug-internal.log
+2023-02-12 17:31:29,829 INFO    MainThread:346308 [wandb_init.py:init():518] calling init triggers
+2023-02-12 17:31:29,830 INFO    MainThread:346308 [wandb_init.py:init():521] wandb.init called with sweep_config: {}
+config: {'epochs': 5, 'batch_size': 128, 'learning_rate': 0.005, 'output_length': 1, 'device': device(type='cuda'), 'withlogtrans': False, 'method_scaling': 'std'}
+2023-02-12 17:31:29,830 INFO    MainThread:346308 [wandb_init.py:init():571] starting backend
+2023-02-12 17:31:29,830 INFO    MainThread:346308 [wandb_init.py:init():575] setting up manager
+2023-02-12 17:31:29,832 INFO    MainThread:346308 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-02-12 17:31:29,835 INFO    MainThread:346308 [wandb_init.py:init():582] backend started and connected
+2023-02-12 17:31:29,837 INFO    MainThread:346308 [wandb_init.py:init():670] updated telemetry
+2023-02-12 17:31:29,844 INFO    MainThread:346308 [wandb_init.py:init():710] communicating run to backend with 60.0 second timeout
+2023-02-12 17:31:30,454 INFO    MainThread:346308 [wandb_run.py:_on_init():2121] communicating current version
+2023-02-12 17:31:30,660 INFO    MainThread:346308 [wandb_run.py:_on_init():2125] got version response upgrade_message: "wandb version 0.13.10 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-02-12 17:31:30,660 INFO    MainThread:346308 [wandb_init.py:init():758] starting run threads in backend
+2023-02-12 17:31:33,686 INFO    MainThread:346308 [wandb_run.py:_console_start():2101] atexit reg
+2023-02-12 17:31:33,686 INFO    MainThread:346308 [wandb_run.py:_redirect():1959] redirect: SettingsConsole.WRAP_RAW
+2023-02-12 17:31:33,686 INFO    MainThread:346308 [wandb_run.py:_redirect():2024] Wrapping output streams.
+2023-02-12 17:31:33,686 INFO    MainThread:346308 [wandb_run.py:_redirect():2046] Redirects installed.
+2023-02-12 17:31:33,686 INFO    MainThread:346308 [wandb_init.py:init():798] run started, returning control to user process
+2023-02-12 17:31:35,778 INFO    MainThread:346308 [wandb_watch.py:watch():51] Watching
+2023-02-12 17:31:35,801 INFO    MainThread:346308 [wandb_run.py:_finish():1844] finishing run lnit-ia/HumidityCorrectionProject/xs996scs
+2023-02-12 17:31:35,802 INFO    MainThread:346308 [wandb_run.py:_atexit_cleanup():2070] got exitcode: 1
+2023-02-12 17:31:35,802 INFO    MainThread:346308 [wandb_run.py:_restore():2053] restore
+2023-02-12 17:31:35,802 INFO    MainThread:346308 [wandb_run.py:_restore():2059] restore done
+2023-02-12 17:31:42,106 INFO    MainThread:346308 [wandb_run.py:_footer_history_summary_info():3427] rendering history
+2023-02-12 17:31:42,107 INFO    MainThread:346308 [wandb_run.py:_footer_history_summary_info():3459] rendering summary
+2023-02-12 17:31:42,110 INFO    MainThread:346308 [wandb_run.py:_footer_sync_info():3383] logging synced files

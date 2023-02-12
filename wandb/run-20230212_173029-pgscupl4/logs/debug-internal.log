@@ -1,0 +1,180 @@
+2023-02-12 17:30:29,887 INFO    StreamThr :346037 [internal.py:wandb_internal():87] W&B internal server running at pid: 346037, started at: 2023-02-12 17:30:29.886027
+2023-02-12 17:30:29,891 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: status
+2023-02-12 17:30:29,894 INFO    WriterThread:346037 [datastore.py:open_for_write():85] open: /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/run-pgscupl4.wandb
+2023-02-12 17:30:29,897 DEBUG   SenderThread:346037 [sender.py:send():334] send: header
+2023-02-12 17:30:29,897 DEBUG   SenderThread:346037 [sender.py:send():334] send: run
+2023-02-12 17:30:30,497 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: check_version
+2023-02-12 17:30:30,498 INFO    SenderThread:346037 [dir_watcher.py:__init__():216] watching files in: /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files
+2023-02-12 17:30:30,498 INFO    SenderThread:346037 [sender.py:_start_run_threads():1065] run started: pgscupl4 with start time 1676219429.883978
+2023-02-12 17:30:30,498 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: summary_record
+2023-02-12 17:30:30,499 INFO    SenderThread:346037 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-12 17:30:30,499 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: check_version
+2023-02-12 17:30:30,711 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: run_start
+2023-02-12 17:30:30,715 DEBUG   HandlerThread:346037 [system_info.py:__init__():31] System info init
+2023-02-12 17:30:30,715 DEBUG   HandlerThread:346037 [system_info.py:__init__():46] System info init done
+2023-02-12 17:30:30,715 INFO    HandlerThread:346037 [system_monitor.py:start():151] Starting system monitor
+2023-02-12 17:30:30,715 INFO    SystemMonitor:346037 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-02-12 17:30:30,716 INFO    HandlerThread:346037 [system_monitor.py:probe():172] Collecting system info
+2023-02-12 17:30:30,716 INFO    SystemMonitor:346037 [interfaces.py:start():168] Started cpu
+2023-02-12 17:30:30,717 INFO    SystemMonitor:346037 [interfaces.py:start():168] Started disk
+2023-02-12 17:30:30,718 INFO    SystemMonitor:346037 [interfaces.py:start():168] Started gpu
+2023-02-12 17:30:30,719 INFO    SystemMonitor:346037 [interfaces.py:start():168] Started memory
+2023-02-12 17:30:30,719 INFO    SystemMonitor:346037 [interfaces.py:start():168] Started network
+2023-02-12 17:30:30,726 ERROR   gpu       :346037 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-12 17:30:30,743 DEBUG   HandlerThread:346037 [system_info.py:probe():195] Probing system
+2023-02-12 17:30:30,745 DEBUG   HandlerThread:346037 [system_info.py:_probe_git():180] Probing git
+2023-02-12 17:30:30,751 DEBUG   HandlerThread:346037 [system_info.py:_probe_git():188] Probing git done
+2023-02-12 17:30:30,751 DEBUG   HandlerThread:346037 [system_info.py:probe():241] Probing system done
+2023-02-12 17:30:30,751 DEBUG   HandlerThread:346037 [system_monitor.py:probe():181] {'os': 'Linux-5.14.0-1054-oem-x86_64-with-glibc2.31', 'python': '3.10.8', 'heartbeatAt': '2023-02-12T16:30:30.744004', 'startedAt': '2023-02-12T16:30:29.876866', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/lnit/Bureau/humidityCorrection/main_.py', 'codePath': 'main_.py', 'git': {'remote': 'https://github.com/EDJINEDJA/humidityCorrection.git', 'commit': 'dcae272e3075a08eeaa11b795407119d27f98e0c'}, 'email': 'edjinedjalaris@gmail.com', 'root': '/home/lnit/Bureau/humidityCorrection', 'host': 'lnit-Precision-5570', 'username': 'lnit', 'executable': '/home/lnit/anaconda3/envs/venv/bin/python', 'cpu_count': 14, 'cpu_count_logical': 20, 'cpu_freq': {'current': 2584.1202, 'min': 400.0, 'max': 4180.0}, 'cpu_freq_per_core': [{'current': 2700.0, 'min': 400.0, 'max': 4600.0}, {'current': 2700.0, 'min': 400.0, 'max': 4600.0}, {'current': 967.411, 'min': 400.0, 'max': 4600.0}, {'current': 2700.0, 'min': 400.0, 'max': 4600.0}, {'current': 2700.0, 'min': 400.0, 'max': 4700.0}, {'current': 2700.0, 'min': 400.0, 'max': 4700.0}, {'current': 2114.993, 'min': 400.0, 'max': 4700.0}, {'current': 2700.0, 'min': 400.0, 'max': 4700.0}, {'current': 2700.0, 'min': 400.0, 'max': 4600.0}, {'current': 2700.0, 'min': 400.0, 'max': 4600.0}, {'current': 2700.0, 'min': 400.0, 'max': 4600.0}, {'current': 2700.0, 'min': 400.0, 'max': 4600.0}, {'current': 2700.0, 'min': 400.0, 'max': 3500.0}, {'current': 2700.0, 'min': 400.0, 'max': 3500.0}, {'current': 2700.0, 'min': 400.0, 'max': 3500.0}, {'current': 2700.0, 'min': 400.0, 'max': 3500.0}, {'current': 2700.0, 'min': 400.0, 'max': 3500.0}, {'current': 2700.0, 'min': 400.0, 'max': 3500.0}, {'current': 2700.0, 'min': 400.0, 'max': 3500.0}, {'current': 2700.0, 'min': 400.0, 'max': 3500.0}], 'disk': {'total': 929.0439758300781, 'used': 103.91987228393555}, 'gpu': 'NVIDIA RTX A2000 8GB Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA RTX A2000 8GB Laptop GPU', 'memory_total': 8372486144}], 'memory': {'total': 31.0367431640625}}
+2023-02-12 17:30:30,751 INFO    HandlerThread:346037 [system_monitor.py:probe():182] Finished collecting system info
+2023-02-12 17:30:30,751 INFO    HandlerThread:346037 [system_monitor.py:probe():185] Publishing system info
+2023-02-12 17:30:30,751 DEBUG   HandlerThread:346037 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-02-12 17:30:30,751 DEBUG   HandlerThread:346037 [system_info.py:_save_pip():67] Saving pip packages done
+2023-02-12 17:30:30,752 DEBUG   HandlerThread:346037 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-02-12 17:30:31,499 INFO    Thread-13 :346037 [dir_watcher.py:_on_file_created():275] file/dir created: /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/conda-environment.yaml
+2023-02-12 17:30:31,499 INFO    Thread-13 :346037 [dir_watcher.py:_on_file_created():275] file/dir created: /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/requirements.txt
+2023-02-12 17:30:31,499 INFO    Thread-13 :346037 [dir_watcher.py:_on_file_created():275] file/dir created: /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/wandb-summary.json
+2023-02-12 17:30:32,728 ERROR   gpu       :346037 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-12 17:30:33,693 DEBUG   HandlerThread:346037 [system_info.py:_save_conda():86] Saving conda packages done
+2023-02-12 17:30:33,694 INFO    HandlerThread:346037 [system_monitor.py:probe():187] Finished publishing system info
+2023-02-12 17:30:33,699 DEBUG   SenderThread:346037 [sender.py:send():334] send: files
+2023-02-12 17:30:33,699 INFO    SenderThread:346037 [sender.py:_save_file():1319] saving file wandb-metadata.json with policy now
+2023-02-12 17:30:33,704 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: stop_status
+2023-02-12 17:30:33,704 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: stop_status
+2023-02-12 17:30:33,983 DEBUG   SenderThread:346037 [sender.py:send():334] send: telemetry
+2023-02-12 17:30:34,466 INFO    Thread-16 :346037 [upload_job.py:push():143] Uploaded file /tmp/tmpx6s6ermvwandb/pdpcq611-wandb-metadata.json
+2023-02-12 17:30:34,499 INFO    Thread-13 :346037 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/conda-environment.yaml
+2023-02-12 17:30:34,499 INFO    Thread-13 :346037 [dir_watcher.py:_on_file_created():275] file/dir created: /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/wandb-metadata.json
+2023-02-12 17:30:34,730 ERROR   gpu       :346037 [interfaces.py:monitor():129] Failed to sample metric: Not Supported
+2023-02-12 17:30:34,984 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: status_report
+2023-02-12 17:30:35,841 DEBUG   SenderThread:346037 [sender.py:send():334] send: telemetry
+2023-02-12 17:30:35,855 DEBUG   SenderThread:346037 [sender.py:send():334] send: telemetry
+2023-02-12 17:30:35,855 DEBUG   SenderThread:346037 [sender.py:send():334] send: exit
+2023-02-12 17:30:35,855 INFO    SenderThread:346037 [sender.py:send_exit():557] handling exit code: 1
+2023-02-12 17:30:35,855 INFO    SenderThread:346037 [sender.py:send_exit():559] handling runtime: 5
+2023-02-12 17:30:35,857 INFO    SenderThread:346037 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-12 17:30:35,857 INFO    SenderThread:346037 [sender.py:send_exit():565] send defer
+2023-02-12 17:30:35,857 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: defer
+2023-02-12 17:30:35,857 INFO    HandlerThread:346037 [handler.py:handle_request_defer():170] handle defer: 0
+2023-02-12 17:30:35,858 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: defer
+2023-02-12 17:30:35,858 INFO    SenderThread:346037 [sender.py:send_request_defer():581] handle sender defer: 0
+2023-02-12 17:30:35,858 INFO    SenderThread:346037 [sender.py:transition_state():585] send defer: 1
+2023-02-12 17:30:35,858 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: defer
+2023-02-12 17:30:35,858 INFO    HandlerThread:346037 [handler.py:handle_request_defer():170] handle defer: 1
+2023-02-12 17:30:35,859 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: defer
+2023-02-12 17:30:35,859 INFO    SenderThread:346037 [sender.py:send_request_defer():581] handle sender defer: 1
+2023-02-12 17:30:35,859 INFO    SenderThread:346037 [sender.py:transition_state():585] send defer: 2
+2023-02-12 17:30:35,859 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: defer
+2023-02-12 17:30:35,859 INFO    HandlerThread:346037 [handler.py:handle_request_defer():170] handle defer: 2
+2023-02-12 17:30:35,859 INFO    HandlerThread:346037 [system_monitor.py:finish():161] Stopping system monitor
+2023-02-12 17:30:35,859 DEBUG   SystemMonitor:346037 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-02-12 17:30:35,860 DEBUG   SystemMonitor:346037 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-02-12 17:30:35,860 DEBUG   SystemMonitor:346037 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-02-12 17:30:35,861 INFO    HandlerThread:346037 [interfaces.py:finish():175] Joined cpu
+2023-02-12 17:30:35,861 INFO    HandlerThread:346037 [interfaces.py:finish():175] Joined disk
+2023-02-12 17:30:35,898 INFO    HandlerThread:346037 [interfaces.py:finish():175] Joined gpu
+2023-02-12 17:30:35,899 INFO    HandlerThread:346037 [interfaces.py:finish():175] Joined memory
+2023-02-12 17:30:35,899 INFO    HandlerThread:346037 [interfaces.py:finish():175] Joined network
+2023-02-12 17:30:35,899 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: defer
+2023-02-12 17:30:35,899 INFO    SenderThread:346037 [sender.py:send_request_defer():581] handle sender defer: 2
+2023-02-12 17:30:35,899 INFO    SenderThread:346037 [sender.py:transition_state():585] send defer: 3
+2023-02-12 17:30:35,899 DEBUG   SenderThread:346037 [sender.py:send():334] send: stats
+2023-02-12 17:30:35,900 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: defer
+2023-02-12 17:30:35,900 INFO    HandlerThread:346037 [handler.py:handle_request_defer():170] handle defer: 3
+2023-02-12 17:30:35,900 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: defer
+2023-02-12 17:30:35,900 INFO    SenderThread:346037 [sender.py:send_request_defer():581] handle sender defer: 3
+2023-02-12 17:30:35,900 INFO    SenderThread:346037 [sender.py:transition_state():585] send defer: 4
+2023-02-12 17:30:35,901 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: defer
+2023-02-12 17:30:35,901 INFO    HandlerThread:346037 [handler.py:handle_request_defer():170] handle defer: 4
+2023-02-12 17:30:35,901 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: defer
+2023-02-12 17:30:35,901 INFO    SenderThread:346037 [sender.py:send_request_defer():581] handle sender defer: 4
+2023-02-12 17:30:35,901 INFO    SenderThread:346037 [sender.py:transition_state():585] send defer: 5
+2023-02-12 17:30:35,901 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: defer
+2023-02-12 17:30:35,902 INFO    HandlerThread:346037 [handler.py:handle_request_defer():170] handle defer: 5
+2023-02-12 17:30:35,902 DEBUG   SenderThread:346037 [sender.py:send():334] send: summary
+2023-02-12 17:30:35,902 INFO    SenderThread:346037 [sender.py:_save_file():1319] saving file wandb-summary.json with policy end
+2023-02-12 17:30:35,903 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: defer
+2023-02-12 17:30:35,903 INFO    SenderThread:346037 [sender.py:send_request_defer():581] handle sender defer: 5
+2023-02-12 17:30:35,903 INFO    SenderThread:346037 [sender.py:transition_state():585] send defer: 6
+2023-02-12 17:30:35,903 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: defer
+2023-02-12 17:30:35,903 INFO    HandlerThread:346037 [handler.py:handle_request_defer():170] handle defer: 6
+2023-02-12 17:30:35,903 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: defer
+2023-02-12 17:30:35,903 INFO    SenderThread:346037 [sender.py:send_request_defer():581] handle sender defer: 6
+2023-02-12 17:30:35,906 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: status_report
+2023-02-12 17:30:36,210 INFO    SenderThread:346037 [sender.py:transition_state():585] send defer: 7
+2023-02-12 17:30:36,210 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: defer
+2023-02-12 17:30:36,210 INFO    HandlerThread:346037 [handler.py:handle_request_defer():170] handle defer: 7
+2023-02-12 17:30:36,211 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: defer
+2023-02-12 17:30:36,211 INFO    SenderThread:346037 [sender.py:send_request_defer():581] handle sender defer: 7
+2023-02-12 17:30:36,501 INFO    Thread-13 :346037 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/wandb-summary.json
+2023-02-12 17:30:36,502 INFO    Thread-13 :346037 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/config.yaml
+2023-02-12 17:30:36,502 INFO    Thread-13 :346037 [dir_watcher.py:_on_file_created():275] file/dir created: /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/output.log
+2023-02-12 17:30:36,854 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-12 17:30:37,856 INFO    SenderThread:346037 [sender.py:transition_state():585] send defer: 8
+2023-02-12 17:30:37,856 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: poll_exit
+2023-02-12 17:30:37,857 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: defer
+2023-02-12 17:30:37,857 INFO    HandlerThread:346037 [handler.py:handle_request_defer():170] handle defer: 8
+2023-02-12 17:30:37,858 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: defer
+2023-02-12 17:30:37,858 INFO    SenderThread:346037 [sender.py:send_request_defer():581] handle sender defer: 8
+2023-02-12 17:30:37,881 INFO    SenderThread:346037 [sender.py:transition_state():585] send defer: 9
+2023-02-12 17:30:37,881 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: defer
+2023-02-12 17:30:37,882 INFO    HandlerThread:346037 [handler.py:handle_request_defer():170] handle defer: 9
+2023-02-12 17:30:37,882 DEBUG   SenderThread:346037 [sender.py:send():334] send: artifact
+2023-02-12 17:30:38,502 INFO    Thread-13 :346037 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/output.log
+2023-02-12 17:30:39,310 INFO    SenderThread:346037 [sender.py:send_artifact():1415] sent artifact job-https___github.com_EDJINEDJA_humidityCorrection.git_main_.py - {'id': 'QXJ0aWZhY3Q6MzYzOTY0MzM5', 'digest': '804d3b4d8d19ed5dd4e882cc8f59b397', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_EDJINEDJA_humidityCorrection.git_main_.py', 'alias': 'v0'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjUyNzMwOTM3', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MzYzOTY0MzM5', 'versionIndex': 0}}, 'version': 'v0'}
+2023-02-12 17:30:39,311 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: defer
+2023-02-12 17:30:39,311 INFO    SenderThread:346037 [sender.py:send_request_defer():581] handle sender defer: 9
+2023-02-12 17:30:39,311 INFO    SenderThread:346037 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-02-12 17:30:39,505 INFO    SenderThread:346037 [dir_watcher.py:finish():392] scan: /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files
+2023-02-12 17:30:39,506 INFO    SenderThread:346037 [dir_watcher.py:finish():406] scan save: /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/output.log output.log
+2023-02-12 17:30:39,506 INFO    SenderThread:346037 [dir_watcher.py:finish():406] scan save: /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/requirements.txt requirements.txt
+2023-02-12 17:30:39,506 INFO    SenderThread:346037 [dir_watcher.py:finish():406] scan save: /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/wandb-metadata.json wandb-metadata.json
+2023-02-12 17:30:39,506 INFO    SenderThread:346037 [dir_watcher.py:finish():406] scan save: /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/conda-environment.yaml conda-environment.yaml
+2023-02-12 17:30:39,506 INFO    SenderThread:346037 [dir_watcher.py:finish():406] scan save: /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/wandb-summary.json wandb-summary.json
+2023-02-12 17:30:39,507 INFO    SenderThread:346037 [dir_watcher.py:finish():406] scan save: /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/config.yaml config.yaml
+2023-02-12 17:30:39,511 INFO    SenderThread:346037 [sender.py:transition_state():585] send defer: 10
+2023-02-12 17:30:39,512 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: defer
+2023-02-12 17:30:39,512 INFO    HandlerThread:346037 [handler.py:handle_request_defer():170] handle defer: 10
+2023-02-12 17:30:39,516 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: defer
+2023-02-12 17:30:39,516 INFO    SenderThread:346037 [sender.py:send_request_defer():581] handle sender defer: 10
+2023-02-12 17:30:39,516 INFO    SenderThread:346037 [file_pusher.py:finish():160] shutting down file pusher
+2023-02-12 17:30:40,305 INFO    Thread-21 :346037 [upload_job.py:push():143] Uploaded file /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/config.yaml
+2023-02-12 17:30:40,307 INFO    Thread-17 :346037 [upload_job.py:push():143] Uploaded file /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/output.log
+2023-02-12 17:30:40,310 INFO    Thread-20 :346037 [upload_job.py:push():143] Uploaded file /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/wandb-summary.json
+2023-02-12 17:30:40,312 INFO    Thread-19 :346037 [upload_job.py:push():143] Uploaded file /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/conda-environment.yaml
+2023-02-12 17:30:40,338 INFO    Thread-18 :346037 [upload_job.py:push():143] Uploaded file /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/files/requirements.txt
+2023-02-12 17:30:40,538 INFO    Thread-12 (_thread_body):346037 [sender.py:transition_state():585] send defer: 11
+2023-02-12 17:30:40,539 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: defer
+2023-02-12 17:30:40,539 INFO    HandlerThread:346037 [handler.py:handle_request_defer():170] handle defer: 11
+2023-02-12 17:30:40,540 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: defer
+2023-02-12 17:30:40,540 INFO    SenderThread:346037 [sender.py:send_request_defer():581] handle sender defer: 11
+2023-02-12 17:30:40,540 INFO    SenderThread:346037 [file_pusher.py:join():165] waiting for file pusher
+2023-02-12 17:30:40,540 INFO    SenderThread:346037 [sender.py:transition_state():585] send defer: 12
+2023-02-12 17:30:40,540 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: defer
+2023-02-12 17:30:40,540 INFO    HandlerThread:346037 [handler.py:handle_request_defer():170] handle defer: 12
+2023-02-12 17:30:40,541 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: defer
+2023-02-12 17:30:40,541 INFO    SenderThread:346037 [sender.py:send_request_defer():581] handle sender defer: 12
+2023-02-12 17:30:40,736 INFO    SenderThread:346037 [sender.py:transition_state():585] send defer: 13
+2023-02-12 17:30:40,737 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: defer
+2023-02-12 17:30:40,737 INFO    HandlerThread:346037 [handler.py:handle_request_defer():170] handle defer: 13
+2023-02-12 17:30:40,738 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: defer
+2023-02-12 17:30:40,738 INFO    SenderThread:346037 [sender.py:send_request_defer():581] handle sender defer: 13
+2023-02-12 17:30:40,738 INFO    SenderThread:346037 [sender.py:transition_state():585] send defer: 14
+2023-02-12 17:30:40,738 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: defer
+2023-02-12 17:30:40,739 INFO    HandlerThread:346037 [handler.py:handle_request_defer():170] handle defer: 14
+2023-02-12 17:30:40,740 DEBUG   SenderThread:346037 [sender.py:send():334] send: final
+2023-02-12 17:30:40,740 DEBUG   SenderThread:346037 [sender.py:send():334] send: footer
+2023-02-12 17:30:40,741 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: defer
+2023-02-12 17:30:40,741 INFO    SenderThread:346037 [sender.py:send_request_defer():581] handle sender defer: 14
+2023-02-12 17:30:40,743 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-12 17:30:40,743 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: server_info
+2023-02-12 17:30:40,743 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: get_summary
+2023-02-12 17:30:40,743 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: sampled_history
+2023-02-12 17:30:40,744 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: poll_exit
+2023-02-12 17:30:40,745 DEBUG   SenderThread:346037 [sender.py:send_request():361] send_request: server_info
+2023-02-12 17:30:41,041 DEBUG   HandlerThread:346037 [handler.py:handle_request():144] handle_request: shutdown
+2023-02-12 17:30:41,042 INFO    HandlerThread:346037 [handler.py:finish():841] shutting down handler
+2023-02-12 17:30:41,745 INFO    WriterThread:346037 [datastore.py:close():299] close: /home/lnit/Bureau/humidityCorrection/wandb/run-20230212_173029-pgscupl4/run-pgscupl4.wandb
+2023-02-12 17:30:42,040 INFO    SenderThread:346037 [sender.py:finish():1491] shutting down sender
+2023-02-12 17:30:42,040 INFO    SenderThread:346037 [file_pusher.py:finish():160] shutting down file pusher
+2023-02-12 17:30:42,040 INFO    SenderThread:346037 [file_pusher.py:join():165] waiting for file pusher

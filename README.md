@@ -22,13 +22,5 @@
 
 <!--ts-->
 * [Aims and Objectives](#Aims-and-Objectives)
-* [What is Feature engineering](#Feature-engineering)
-* [Usage](#Usage)
-* [Handle missing values](#Handle-missing-values)
-* [Handle outliers](#Handle-outliers)
-* [Remove unnecessary variables](#Remove-unnecessary-variables)
-* [Encoding categorical variables](#Encoding-categorical-variables)
-* [Numerical transformation](#Numerical-transformation)
-* [Scaling numerical features](#Scaling-numerical-features)
-* [Extracting of date](#Extracting-of-date)
+
 <!--te-->
