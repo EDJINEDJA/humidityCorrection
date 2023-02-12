@@ -1,4 +1,5 @@
 import torch
+import os 
 
 def trainer(X_train,y_train,X_test,y_test,n_epochs,batch_size,model ,criterion, optimizer):
     print("______________training part _________________")
@@ -38,3 +39,5 @@ def trainer(X_train,y_train,X_test,y_test,n_epochs,batch_size,model ,criterion, 
 
         if e % 10== 0:
             print('epoch :: eval', e, 'loss: ', loss.item())
+
+    torch.save(model.state_dict(), os.path.abspath("src/output/model.pth"))
