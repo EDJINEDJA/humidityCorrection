@@ -1,7 +1,8 @@
 from input.preprocessing import load_transform
 from configparser import ConfigParser 
 from src.model.Network import Network
-from src.trainer import trainer
+from src.trainer import trainer 
+
 import torch
 
 batch_size = 128
@@ -14,7 +15,7 @@ output_length = int(const_variables.get("slicing","output_length"))
 
 if __name__ == "__main__":
     parser = load_transform()
-    scaled_array , X_train,y_train,X_test,y_test = parser.fit_transform(withlogtrans=False , method_scaling="minmax")
+    scaled_array , X_train,y_train,X_test,y_test = parser.fit_transform(withlogtrans=False, method_scaling="std")
    
     n_features = scaled_array.shape[-1]
     
@@ -26,4 +27,5 @@ if __name__ == "__main__":
     criterion = torch.nn.MSELoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
    
-    trainer(X_train,y_train,n_epochs,batch_size, model ,criterion, optimizer)
+    trainer(X_train,y_train,X_test,y_test,n_epochs,batch_size, model ,criterion, optimizer)
+   

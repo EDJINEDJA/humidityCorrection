@@ -2,7 +2,8 @@ import pandas as pd
 from configparser import ConfigParser
 from sklearn.preprocessing import StandardScaler , MinMaxScaler
 import numpy as np
-
+import joblib
+import os
 
 const_variables = ConfigParser()
 const_variables.read("./config/config.ini") 
@@ -49,7 +50,10 @@ class load_transform():
             feature_scaler.fit(feature_array[:n_train])
             # Fit Scaler only on Training target values
             target_scaler = MinMaxScaler()
+            joblib.dump(target_scaler , os.path.abspath("output/normalization.save"))
             target_scaler.fit(feature_array[:n_train, -1].reshape(-1, 1))
+
+
             # Transfom on both Training and Test data
             scaled_array = pd.DataFrame(feature_scaler.transform(feature_array),
                                         columns=features)
@@ -66,6 +70,7 @@ class load_transform():
             # Fit Scaler only on Training target values
             target_scaler = MinMaxScaler()
             target_scaler.fit(feature_array[:n_train, -1].reshape(-1, 1))
+            joblib.dump(target_scaler , os.path.abspath("src/output/normalization.save"))
             # Transfom on both Training and Test data
             scaled_array = pd.DataFrame(feature_scaler.transform(feature_array),
                                         columns=features)
@@ -91,6 +96,7 @@ class load_transform():
             # Fit Scaler only on Training target values
             target_scaler =  StandardScaler()
             target_scaler.fit(feature_array[:n_train, -1].reshape(-1, 1))
+            joblib.dump(target_scaler , os.path.abspath("src/output/normalization.save"))
             # Transfom on both Training and Test data
             scaled_array = pd.DataFrame(feature_scaler.transform(feature_array),
                                         columns=features)
@@ -108,6 +114,7 @@ class load_transform():
             # Fit Scaler only on Training target values
             target_scaler =  StandardScaler()
             target_scaler.fit(feature_array[:n_train, -1].reshape(-1, 1))
+            joblib.dump(target_scaler , os.path.abspath("src/output/normalization.save"))
             # Transfom on both Training and Test data
             scaled_array = pd.DataFrame(feature_scaler.transform(feature_array),
                                         columns=features)
@@ -140,7 +147,6 @@ class load_transform():
             X ,Y=self.create_sliding_window(scaled_array )
             X_train = X[:n_train]
             y_train = Y[:n_train]
-
             X_test = X[n_train:]
             y_test = Y[n_train:]
             return scaled_array , X_train,y_train,X_test,y_test
@@ -149,7 +155,6 @@ class load_transform():
             X,Y =self.create_sliding_window(scaled_array )
             X_train = X[:n_train]
             y_train = Y[:n_train]
-
             X_test = X[n_train:]
             y_test = Y[n_train:]
             return scaled_array  , X_train,y_train,X_test,y_test
